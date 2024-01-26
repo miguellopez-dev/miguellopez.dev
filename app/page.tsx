@@ -11,7 +11,7 @@ export default function HomePage() {
                 <h1 className='text-7xl'>Hi, I'm Miguel Lopez</h1>
                 <h2 className='text-5xl'>Full Stack Developer</h2>
             </div>
-            <div className='w-100 md:w-1/2'>
+            <div className='w-100 lg:w-1/2'>
                 <p className='text-justify text-xl'>
                     As a proficient developer with expertise in React, Python,
                     and WordPress, I bring a blend of aesthetic design and
