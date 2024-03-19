@@ -2,11 +2,20 @@ import { HiOutlineDocumentText } from 'react-icons/hi2';
 import { SlSocialLinkedin } from 'react-icons/sl';
 import { FiGithub } from 'react-icons/fi';
 import { MdAlternateEmail } from 'react-icons/md';
-import { IconContext } from 'react-icons';
+import { SiMinutemailer } from 'react-icons/si';
+import Image from 'next/image';
 
 export default function HomePage() {
     return (
-        <div className='flex min-h-screen flex-col items-center space-y-20 p-24'>
+        <div className='flex min-h-screen flex-col items-center space-y-20 p-24 relative'>
+            <div className='absolute right-0 top-0 -z-10'>
+                <Image
+                    src='/images/wolf-head-bg-large.png'
+                    alt='Wolf Head'
+                    width={300}
+                    height={300}
+                />
+            </div>
             <div className='flex flex-col items-center  space-y-6'>
                 <h1 className='text-7xl'>Hi, I'm Miguel Lopez</h1>
                 <h2 className='text-5xl'>Full Stack Developer</h2>
@@ -23,14 +32,16 @@ export default function HomePage() {
                     ideas into digital realities.
                 </p>
             </div>
+
             <div className='flex space-x-4'>
-                <HiOutlineDocumentText className='text-2xl transition-colors hover:text-teal-400 duration-300' />
-                <SlSocialLinkedin className='text-2xl transition-colors hover:text-teal-400 duration-300' />
-                <FiGithub className='text-2xl transition-colors hover:text-teal-400 duration-300' />
-                <MdAlternateEmail className='text-2xl transition-colors hover:text-teal-400 duration-300' />
+                <HiOutlineDocumentText className='text-2xl transition-colors hover:text-ctaGreen duration-300' />
+                <SlSocialLinkedin className='text-2xl transition-colors hover:text-ctaGreen duration-300' />
+                <FiGithub className='text-2xl transition-colors hover:text-ctaGreen duration-300' />
+                <MdAlternateEmail className='text-2xl transition-colors hover:text-ctaGreen duration-300' />
             </div>
             <div>
-                <button className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300'>
+                <button className='bg-ctaGreen hover:bg-green-700 text-darkBlue font-bold py-4 px-5 rounded transition-colors duration-300 flex items-center text-xl justify-center'>
+                    <SiMinutemailer className='text-2xl mr-2' />
                     Send me a message
                 </button>
             </div>
