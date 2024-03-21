@@ -7,21 +7,21 @@ import Image from 'next/image';
 
 export default function HomePage() {
     return (
-        <div className='flex min-h-screen flex-col items-center space-y-20 p-24 relative'>
+        <div className='flex min-h-screen flex-col items-center space-y-10 px-24 py-10 relative'>
             <div className='absolute right-0 top-0 -z-10'>
                 <Image
                     src='/images/wolf-head-bg-large.png'
                     alt='Wolf Head'
                     width={300}
-                    height={300}
+                    height={400}
                 />
             </div>
             <div className='flex flex-col items-center  space-y-6'>
-                <h1 className='text-7xl'>Hi, I'm Miguel Lopez</h1>
-                <h2 className='text-5xl'>Full Stack Developer</h2>
+                <h1 className='text-4xl lg:text-7xl'>Hi, I'm Miguel Lopez</h1>
+                <h2 className='text-2xl lg:text-5xl'>Full Stack Developer</h2>
             </div>
             <div className='w-100 lg:w-1/2'>
-                <p className='text-justify text-xl'>
+                <p className='text-justify text-l lg:text-2xl'>
                     As a proficient developer with expertise in React, Python,
                     and WordPress, I bring a blend of aesthetic design and
                     technical skill to every project. My passion for crafting
@@ -40,7 +40,7 @@ export default function HomePage() {
                 <MdAlternateEmail className='text-2xl transition-colors hover:text-ctaGreen duration-300' />
             </div>
             <div>
-                <button className='bg-ctaGreen hover:bg-green-700 text-darkBlue font-bold py-4 px-5 rounded transition-colors duration-300 flex items-center text-xl justify-center'>
+                <button className='bg-ctaGreen text-darkBlue hover:bg-darkBlue hover:text-mediumPurple hover:border-2 hover:border-mediumPurple font-bold py-4 px-5 rounded transition-all duration-200 flex items-center text-xl justify-center'>
                     <SiMinutemailer className='text-2xl mr-2' />
                     Send me a message
                 </button>
