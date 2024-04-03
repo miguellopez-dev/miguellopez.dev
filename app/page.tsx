@@ -7,20 +7,21 @@ import Image from 'next/image';
 
 export default function HomePage() {
     return (
-        <div className='flex min-h-screen flex-col items-center space-y-10 px-24 py-10 relative'>
+        <div className='flex min-h-screen flex-col items-center space-y-10  py-10 relative'>
             <div className='absolute right-0 top-0 -z-10'>
                 <Image
                     src='/images/wolf-head-bg-large.png'
                     alt='Wolf Head'
                     width={300}
                     height={400}
+                    sizes='(max-width: 1128px) 20vw,'
                 />
             </div>
             <div className='flex flex-col items-center  space-y-6'>
                 <h1 className='text-4xl lg:text-7xl'>Hi, I'm Miguel Lopez</h1>
                 <h2 className='text-2xl lg:text-5xl'>Full Stack Developer</h2>
             </div>
-            <div className='w-100 lg:w-1/2'>
+            <div className='w-10/12 md:w-2/3 lg:w-3/5 xl:w-1/2'>
                 <p className='text-justify text-l lg:text-2xl'>
                     As a proficient developer with expertise in React, Python,
                     and WordPress, I bring a blend of aesthetic design and
@@ -40,7 +41,7 @@ export default function HomePage() {
                 <MdAlternateEmail className='text-2xl transition-colors hover:text-ctaGreen duration-300' />
             </div>
             <div>
-                <button className='bg-ctaGreen text-darkBlue hover:bg-darkBlue hover:text-mediumPurple hover:border-2 hover:border-mediumPurple font-bold py-4 px-5 rounded transition-all duration-200 flex items-center text-xl justify-center'>
+                <button className='bg-ctaGreen text-darkBlue flex items-center text-xl justify-center font-bold py-4 px-5 rounded hover:bg-darkBlue hover:text-mediumPurple hover:border hover:border-mediumPurple transition-colors duration-300'>
                     <SiMinutemailer className='text-2xl mr-2' />
                     Send me a message
                 </button>
