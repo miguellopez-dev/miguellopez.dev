@@ -12,7 +12,9 @@ const Footer = () => {
                     hello@miguellopez.dev
                 </a>
                 <Socials />
-                <p>copyright @ 2024 miguellopez.dev</p>
+                <p>
+                    Copyright &copy; {new Date().getFullYear()} miguellopez.dev
+                </p>
             </div>
         </footer>
     );
