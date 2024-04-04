@@ -4,6 +4,7 @@ import { FiGithub } from 'react-icons/fi';
 import { MdAlternateEmail } from 'react-icons/md';
 import { SiMinutemailer } from 'react-icons/si';
 import Image from 'next/image';
+import Socials from '@/components/Socials';
 
 export default function HomePage() {
     return (
@@ -34,12 +35,7 @@ export default function HomePage() {
                 </p>
             </div>
 
-            <div className='flex space-x-4'>
-                <HiOutlineDocumentText className='text-2xl transition-colors hover:text-ctaGreen duration-300' />
-                <SlSocialLinkedin className='text-2xl transition-colors hover:text-ctaGreen duration-300' />
-                <FiGithub className='text-2xl transition-colors hover:text-ctaGreen duration-300' />
-                <MdAlternateEmail className='text-2xl transition-colors hover:text-ctaGreen duration-300' />
-            </div>
+            <Socials />
             <div>
                 <button className='bg-ctaGreen text-darkBlue flex items-center text-xl justify-center font-bold py-4 px-5 rounded hover:bg-darkBlue hover:text-mediumPurple hover:border hover:border-mediumPurple transition-colors duration-300'>
                     <SiMinutemailer className='text-2xl mr-2' />
