@@ -30,28 +30,28 @@ const Sidebar = ({
                         />
                     </svg>
                 </button>
-                <div className='text-4xl space-y-6'>
+                <div className='text-4xl space-y-6  text-teal-200'>
                     <Link
                         href='/'
-                        className='block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4'
+                        className='block mt-4 lg:inline-block lg:mt-0 hover:text-mediumPurple mr-4'
                     >
                         Home
                     </Link>
                     <Link
                         href='/projects'
-                        className='block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4'
+                        className='block mt-4 lg:inline-block lg:mt-0  hover:text-mediumPurple mr-4'
                     >
                         Projects
                     </Link>
                     <Link
                         href='/technology'
-                        className='block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4'
+                        className='block mt-4 lg:inline-block lg:mt-0  hover:text-mediumPurple mr-4'
                     >
                         Technology
                     </Link>
                     <Link
                         href='/contact'
-                        className='block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white'
+                        className='block mt-4 lg:inline-block lg:mt-0 hover:text-mediumPurple'
                     >
                         Contact
                     </Link>
