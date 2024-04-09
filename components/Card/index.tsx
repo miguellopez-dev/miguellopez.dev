@@ -8,7 +8,7 @@ interface Props {
 const Card = ({ title, description, imageUrl, className }: Props) => {
     return (
         <div
-            className={`max-w-xs lg:h-96 border border-gray-700 rounded-lg overflow-hidden shadow shadow-mediumPurple hover:shadow-lg bg-white ${className}`}
+            className={`max-w-xs lg:h-96 border border-gray-700 rounded-lg overflow-hidden shadow shadow-mediumPurple hover:shadow-lg hover:shadow-mediumPurple bg-white ${className}`}
         >
             <div className='px-6 py-4'>
                 <div className='font-bold text-xl mb-2'>{title}</div>
@@ -16,13 +16,13 @@ const Card = ({ title, description, imageUrl, className }: Props) => {
             </div>
             <div className='px-6 pt-4 pb-2'>
                 <span className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>
-                    #photography
+                    React
                 </span>
                 <span className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>
-                    #travel
+                    TailwindCSS
                 </span>
                 <span className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>
-                    #winter
+                    Next.js
                 </span>
             </div>
         </div>
