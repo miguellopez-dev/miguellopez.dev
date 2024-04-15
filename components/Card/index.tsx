@@ -8,7 +8,7 @@ interface Props {
 const Card = ({ title, description, imageUrl, className }: Props) => {
     return (
         <div
-            className={`max-w-xs lg:h-96 border border-gray-700 rounded-lg overflow-hidden shadow shadow-mediumPurple hover:shadow-lg hover:shadow-mediumPurple bg-white ${className}`}
+            className={`bg-white shadow-md border border-gray-200 rounded-lg max-w-sm lg:h-96 shadow-mediumPurple hover:shadow-lg hover:shadow-mediumPurple ${className}`}
         >
             <div className='px-6 py-4'>
                 <div className='font-bold text-xl mb-2'>{title}</div>
