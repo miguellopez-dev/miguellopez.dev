@@ -1,7 +1,14 @@
 import Link from 'next/link';
 import Logo from './Logo';
+import { usePathname } from 'next/navigation';
 
 const Navbar = ({ toggle }: { toggle: () => void }) => {
+    const pathname = usePathname();
+
+    const baseClasses: string =
+        'block mt-4 lg:inline-block lg:mt-0  hover:text-mediumPurple mr-4 transition-all duration-300';
+
+    const active: string = 'text-mediumPurple border-b border-mediumPurple';
     return (
         <nav className='flex items-center justify-between flex-wrap p-6 px-20'>
             <Logo />
@@ -27,25 +34,33 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                 <div className='text-sm lg:flex-grow text-teal-200'>
                     <Link
                         href='/'
-                        className='block mt-4 lg:inline-block lg:mt-0  hover:text-mediumPurple mr-4'
+                        className={`${baseClasses} ${
+                            pathname === '/' ? active : ''
+                        }`}
                     >
                         Home
                     </Link>
                     <Link
                         href='/projects'
-                        className='block mt-4 lg:inline-block lg:mt-0  hover:text-mediumPurple mr-4'
+                        className={`${baseClasses} ${
+                            pathname === '/projects' ? active : ''
+                        }`}
                     >
                         Projects
                     </Link>
                     <Link
                         href='/technology'
-                        className='block mt-4 lg:inline-block lg:mt-0  hover:text-mediumPurple mr-4'
+                        className={`${baseClasses} ${
+                            pathname === '/technology' ? active : ''
+                        }`}
                     >
                         Technology
                     </Link>
                     <Link
                         href='/contact'
-                        className='block mt-4 lg:inline-block lg:mt-0  hover:text-mediumPurple'
+                        className={`${baseClasses} ${
+                            pathname === '/contact' ? active : ''
+                        }`}
                     >
                         Contact
                     </Link>
