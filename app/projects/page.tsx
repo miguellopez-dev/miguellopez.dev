@@ -37,13 +37,15 @@ export default function ProjectsPage() {
         >
             <main className='w-3/4 m-auto my-4 flex min-h-screen flex-col items-center space-y-10  py-10 relative '>
                 <h1 className='text-center text-4xl'>Projects</h1>
-                <div className='my-4 p-4 gap-6 flex flex-wrap  align-center justify-center lg:grid lg:grid-flow-col lg:gap-10'>
-                    {projects.map((project) => (
+                <div className='my-4 p-4 gap-6 flex flex-wrap  align-center justify-center lg:grid lg:grid-cols-3 lg:gap-10'>
+                    {projects.map((project, index) => (
                         <Card
                             key={project.ProjectId}
                             title={project.Title}
                             description={project.Description}
                             imageUrl={'/images/' + project.ImageUrl + '.png'}
+                            className={`mt-${index * 10}`}
+                            style={{ marginTop: `${index * 40}px` }}
                         />
                     ))}
                 </div>

@@ -3,12 +3,14 @@ interface Props {
     description: string;
     imageUrl?: string;
     className?: string;
+    style?: React.CSSProperties;
 }
 
-const Card = ({ title, description, imageUrl, className }: Props) => {
+const Card = ({ title, description, imageUrl, className, style }: Props) => {
     return (
         <div
-            className={`bg-white shadow-md border border-gray-200 rounded-lg max-w-sm lg:h-min lg:w-96 shadow-mediumPurple hover:shadow-lg hover:shadow-mediumPurple ${className}`}
+            className={`bg-white shadow-md border border-gray-200 rounded-lg max-w-sm lg:h-min w-96 shadow-mediumPurple hover:shadow-lg hover:shadow-mediumPurple ${className}`}
+            style={style}
         >
             {imageUrl && (
                 <img
