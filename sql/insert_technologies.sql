@@ -1,0 +1,12 @@
+INSERT INTO Technologies (Name) VALUES ('React');
+INSERT INTO Technologies (Name) VALUES ('Node.js');
+INSERT INTO Technologies (Name) VALUES ('Tailwind CSS');
+INSERT INTO Technologies (Name) VALUES ('Next.js');
+INSERT INTO Technologies (Name) VALUES ('TypeScript');
+INSERT INTO Technologies (Name) VALUES ('JavaScript');
+INSERT INTO Technologies (Name) VALUES ('SQL');
+INSERT INTO Technologies (Name) VALUES ('HTML 5');
+INSERT INTO Technologies (Name) VALUES ('CSS');
+INSERT INTO Technologies (Name) VALUES ('SCSS');
+INSERT INTO Technologies (Name) VALUES ('Wordpress');
+INSERT INTO Technologies (Name) VALUES ('Python');
