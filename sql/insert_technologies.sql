@@ -10,3 +10,5 @@ INSERT INTO Technologies (Name) VALUES ('CSS');
 INSERT INTO Technologies (Name) VALUES ('SCSS');
 INSERT INTO Technologies (Name) VALUES ('Wordpress');
 INSERT INTO Technologies (Name) VALUES ('Python');
+INSERT INTO Technologies (Name) VALUES ('Material UI');
+INSERT INTO Technologies (Name) VALUES ('Redux');
