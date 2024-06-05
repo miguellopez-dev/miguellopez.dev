@@ -15,6 +15,7 @@ type Project = {
     VideoUrl?: string;
     LiveUrl?: string;
     GithubUrl?: string;
+    Technologies: string;
 };
 
 export default function ProjectsPage() {
@@ -47,6 +48,7 @@ export default function ProjectsPage() {
                             liveUrl={project.LiveUrl}
                             githubUrl={project.GithubUrl}
                             className={`mt-${index * 10}`}
+                            technologies={project.Technologies}
                             style={{ marginTop: `${index * 40}px` }}
                         />
                     ))}

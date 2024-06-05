@@ -8,6 +8,7 @@ interface Props {
     liveUrl?: string;
     githubUrl?: string;
     className?: string;
+    technologies: string;
     style?: React.CSSProperties;
 }
 
@@ -18,6 +19,7 @@ const Card = ({
     liveUrl,
     githubUrl,
     className,
+    technologies,
     style,
 }: Props) => {
     return (
@@ -58,10 +60,19 @@ const Card = ({
                     </a>
                 </div>
             </div>
-            <div className='px-6 pt-4 pb-2'>
-                <span className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>
-                    React
-                </span>
+            <div className='px-6 py-2'>
+                {technologies && (
+                    <div className='flex flex-wrap mt-2'>
+                        {technologies.split(', ').map((tech, index) => (
+                            <span
+                                key={index}
+                                className='bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'
+                            >
+                                {tech}
+                            </span>
+                        ))}
+                    </div>
+                )}
             </div>
         </div>
     );
