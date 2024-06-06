@@ -34,18 +34,21 @@ const Sidebar = ({
                     <Link
                         href='/'
                         className='block mt-4 lg:inline-block lg:mt-0 hover:text-mediumPurple mr-4'
+                        onClick={toggle}
                     >
                         Home
                     </Link>
                     <Link
                         href='/projects'
                         className='block mt-4 lg:inline-block lg:mt-0  hover:text-mediumPurple mr-4'
+                        onClick={toggle}
                     >
                         Projects
                     </Link>
                     <Link
                         href='/technology'
                         className='block mt-4 lg:inline-block lg:mt-0  hover:text-mediumPurple mr-4'
+                        onClick={toggle}
                     >
                         Technology
                     </Link>
