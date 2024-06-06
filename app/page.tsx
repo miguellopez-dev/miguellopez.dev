@@ -29,7 +29,7 @@ export default function HomePage() {
                 </div>
                 <div className='flex flex-col items-center  space-y-6'>
                     <h1 className='text-4xl lg:text-7xl'>
-                        Hi, I'm Miguel Lopez
+                        Hi, I&apos;m Miguel Lopez
                     </h1>
                     <h2 className='text-2xl lg:text-5xl'>
                         Full Stack Developer
@@ -43,7 +43,7 @@ export default function HomePage() {
                         for crafting seamless user experiences and robust
                         applications is evident in my work, ranging from dynamic
                         appointment scheduling apps to engaging administrative
-                        dashboards. Let's build something amazing together.
+                        dashboards. Let&apos;s build something amazing together.
                         Explore my portfolio to see how I turn ideas into
                         digital realities.
                     </p>
