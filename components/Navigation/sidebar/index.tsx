@@ -49,12 +49,6 @@ const Sidebar = ({
                     >
                         Technology
                     </Link>
-                    <Link
-                        href='/contact'
-                        className='block mt-4 lg:inline-block lg:mt-0 hover:text-mediumPurple'
-                    >
-                        Contact
-                    </Link>
                 </div>
             </div>
         </>

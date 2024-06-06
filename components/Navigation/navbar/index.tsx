@@ -56,14 +56,6 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                     >
                         Technology
                     </Link>
-                    <Link
-                        href='/contact'
-                        className={`${baseClasses} ${
-                            pathname === '/contact' ? active : ''
-                        }`}
-                    >
-                        Contact
-                    </Link>
                 </div>
             </div>
         </nav>
