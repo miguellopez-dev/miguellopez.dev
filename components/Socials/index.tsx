@@ -8,9 +8,15 @@ const Socials = () => {
     return (
         <div className='flex space-x-4  text-2xl'>
             <HiOutlineDocumentText className='transistion-colors duration-300 hover:text-ctaGreen ' />
-            <SlSocialLinkedin className='transistion-colors duration-300  hover:text-ctaGreen ' />
-            <FiGithub className='transistion-colors duration-300 hover:text-ctaGreen ' />
-            <MdAlternateEmail className='transistion-colors duration-300 hover:text-ctaGreen ' />
+            <a href='linkedin.com/in/miguel-lopez-tech/' target='_blank'>
+                <SlSocialLinkedin className='transistion-colors duration-300  hover:text-ctaGreen ' />
+            </a>
+            <a href='https://github.com/miguellopez-dev' target='_blank'>
+                <FiGithub className='transistion-colors duration-300 hover:text-ctaGreen ' />
+            </a>
+            <a href='mailto:hello@miguellopez.dev'>
+                <MdAlternateEmail className='transistion-colors duration-300 hover:text-ctaGreen ' />
+            </a>
         </div>
     );
 };
