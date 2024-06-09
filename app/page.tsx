@@ -51,10 +51,13 @@ export default function HomePage() {
 
                 <Socials />
                 <div>
-                    <button className='bg-ctaGreen text-darkBlue flex items-center text-xl justify-center font-bold py-4 px-5 rounded hover:bg-darkBlue hover:text-mediumPurple hover:border hover:border-mediumPurple transition-colors duration-300'>
+                    <a
+                        className='bg-ctaGreen text-darkBlue flex items-center text-xl justify-center font-bold py-4 px-5 rounded hover:bg-darkBlue hover:text-mediumPurple hover:border hover:border-mediumPurple transition-colors duration-300'
+                        href='mailto:hello@miguellopez.dev'
+                    >
                         <SiMinutemailer className='text-2xl mr-2' />
                         Send me a message
-                    </button>
+                    </a>
                 </div>
             </main>
         </motion.div>
