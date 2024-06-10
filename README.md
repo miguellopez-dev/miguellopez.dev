@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website
 
-## Getting Started
+This repository contains the source code for my personal portfolio website, which showcases my projects, skills, and professional details as a Full Stack Developer.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+-   **Project Showcase**: Detailed cards for each project with descriptions, technologies used, and links to live sites, source code, or additional resources.
+-   **Responsive Design**: Fully responsive web design ensuring a seamless experience across various devices and screen sizes.
+-   **Dynamic Project Loading**: Projects details are fetched from a SQL database to keep the site updated with the latest projects.
+-   **Technology Tags**: Each project card displays technology tags that describe the tech stack used in that project.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+-   **Frontend**: React.js, Next.js, Tailwind CSS
+-   **Backend**: Node.js, Express.js (API handling)
+-   **Database**: MySQL
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Challenges
 
-## Learn More
+### Responsive Design
 
-To learn more about Next.js, take a look at the following resources:
+-   **Challenge**: Creating a design that is both aesthetically pleasing and functional across all device sizes.
+-   **Solution**: Used Tailwind CSS for its utility-first classes that made it easier to adjust layouts dynamically and ensure a consistent look and feel.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Integrating Technologies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+-   **Challenge**: Displaying a dynamic set of technologies for each project in a visually appealing manner.
+-   **Solution**: Developed a flexible tagging system that fetches technology data from the backend and displays it in bubble-like tags on each project card.
 
-## Deploy on Vercel
+### Managing Dynamic Data
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-   **Challenge**: Ensuring that project details are up-to-date and can be easily maintained and updated through the database without direct code changes.
+-   **Solution**: Used a relational database (MySQL) to manage project data, which is then fetched via an API to ensure the website remains updated and scalable.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributing
+
+If you have suggestions for improving the portfolio, please feel free to open an issue with the tag "enhancement".
+
+## Contact
+
+Miguel Lopez – [Website](https://miguellopez.dev) – hello@miguellopez.dev
