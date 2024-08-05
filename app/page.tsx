@@ -38,14 +38,17 @@ export default function HomePage() {
                 <div className='w-10/12 md:w-2/3 lg:w-3/5 xl:w-1/2'>
                     <p className='text-justify text-l lg:text-2xl'>
                         As a proficient developer with expertise in React,
-                        Python, and WordPress, I bring a blend of aesthetic
-                        design and technical skill to every project. My passion
-                        for crafting seamless user experiences and robust
-                        applications is evident in my work, ranging from dynamic
-                        appointment scheduling apps to engaging administrative
-                        dashboards. Let&apos;s build something amazing together.
-                        Explore my portfolio to see how I turn ideas into
-                        digital realities.
+                        Python, and WordPress, I blend aesthetic design with
+                        technical skill to craft seamless user experiences and
+                        robust applications. Outside of coding dynamic
+                        appointment scheduling apps and engaging administrative
+                        dashboards, I&apos;m a father to an incredibly curious
+                        boy. Together, we explore everything from the mechanics
+                        of monster trucks to the mysteries of black holes. We
+                        also share a passion for cheering on the US Soccer
+                        teams. Join me in turning creative ideas into digital
+                        realities—Let&apos;s build something amazing together.
+                        Explore my portfolio to see my work in action.
                     </p>
                 </div>
 
